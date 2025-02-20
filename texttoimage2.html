@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+https://huggingface.co/ZB-Tech/Text-to-Image
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text 2 Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark"> <!-- Default to dark mode -->
+    <div class="container">
+        <div class="header">
+            <div class="user-info">
+                <div id="datetime" class="datetime"></div>
+                <div class="user-login">this project devloped by, <span id="username">NOOBGLITCH</span></div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>text to Image Generator</h1>
+            <div class="input-group">
+                <textarea id="prompt" rows="3" placeholder="Describe the image you want to create..."></textarea>
+            </div>
+            
+            <div class="input-group">
+                <select id="imageSize" class="size-select">
+                    <option value="16:9">16:9 Landscape</option>
+                    <option value="9:16">9:16 Portrait</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <button onclick="generateImage()" class="generate-btn">Generate Image</button>
+            </div>
+            <a href="https://gitlab.com/edith300/text-to-image" class="beautiful-button">Source Code</a>
+        
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <div class="progress" id="progress">Progress: 0%</div>
+            </div>
+            
+            <div class="error" id="error"></div>
+            
+            <div id="imageContainer" class="image-container"></div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
