@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-https://huggingface.co/ZB-Tech/Text-to-Image
+
 <html lang="en">
 <head>
+    <img src="logo.jpeg" alt="Header Image" class="header-image">
+        <nav>
+            <div class="menu-icon">
+                [<span></span><span></span><span></span>]
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contatcus.html">Contact</a></li>
+                <li><a href="texttoimage2.html">Text to Image Generator 2</a></li>
+            </ul>
+        </nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>text 2 Image Generator</title>
@@ -18,7 +30,7 @@ https://huggingface.co/ZB-Tech/Text-to-Image
         </div>
         
         <div class="content">
-            <h1>text to Image Generator</h1>
+            <h1>text to Image Generator 2</h1>
             <div class="input-group">
                 <textarea id="prompt" rows="3" placeholder="Describe the image you want to create..."></textarea>
             </div>
@@ -33,18 +45,25 @@ https://huggingface.co/ZB-Tech/Text-to-Image
             <div class="input-group">
                 <button onclick="generateImage()" class="generate-btn">Generate Image</button>
             </div>
-            <a href="https://gitlab.com/edith300/text-to-image" class="beautiful-button">Source Code</a>
-        
+            
             <div class="loading" id="loading">
                 <div class="loading-spinner"></div>
                 <div class="progress" id="progress">Progress: 0%</div>
             </div>
-            
+            <div class="container">
+                <a href="https://gitlab.com/edith300/text-to-image" class="github-btn">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                    Star
+                </a>
+            </div>
+            <br>
             <div class="error" id="error"></div>
             
-            <div id="imageContainer" class="image-container"></div>
+            <div id="imageContainer" class="image-container">
+            
         </div>
     </div>
+    
     <script src="script2.js"></script>
 </body>
 </html>

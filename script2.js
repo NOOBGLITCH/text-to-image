@@ -1,5 +1,5 @@
 const API_TOKEN = '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'; // Replace with your API token
-const MODEL = 'kothariyashhh/GenAi-Texttoimage';
+const MODEL = 'ZB-Tech/Text-to-Image';
 
 
 // Function to generate the image
