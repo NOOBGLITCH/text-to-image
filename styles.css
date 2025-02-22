@@ -44,6 +44,7 @@ body {
 }
 
 /* GitHub Button */
+/* GitHub Button */
 .github-button {
     position: absolute; /* Use absolute positioning to place it relative to the nearest positioned ancestor */
     bottom: 1rem; /* Distance from the bottom of the container */
